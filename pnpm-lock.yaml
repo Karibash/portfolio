@@ -1,5 +1,13 @@
 lockfileVersion: 5.4
 
+overrides:
+  tsconfig-paths: 4.2.0
+
+patchedDependencies:
+  esbuild-register@3.4.2:
+    hash: spgfiu64hqpilsoes5nxr46kwy
+    path: patches/esbuild-register@3.4.2.patch
+
 specifiers:
   '@babel/core': 7.21.5
   '@storybook/addon-essentials': 7.0.7
@@ -2558,7 +2566,7 @@ packages:
       '@types/pretty-hrtime': 1.0.1
       chalk: 4.1.2
       esbuild: 0.17.6
-      esbuild-register: 3.4.2_esbuild@0.17.6
+      esbuild-register: 3.4.2_spgfiu64hqpilsoes5nxr46kwy_esbuild@0.17.6
       file-system-cache: 2.1.1
       find-up: 5.0.0
       fs-extra: 11.1.1
@@ -3187,10 +3195,6 @@ packages:
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
-    dev: true
-
-  /@types/json5/0.0.29:
-    resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
   /@types/lodash/4.14.194:
@@ -5019,7 +5023,7 @@ packages:
     resolution: {integrity: sha512-jyfL/pwPqaFXyKnj8lP8iLk6Z0m099uXR45aSN8Av1XD4vhvQutxxPzgA2bTcAwQpa1zCXDcWOlhFgyP3GKqhQ==}
     dev: true
 
-  /esbuild-register/3.4.2_esbuild@0.17.6:
+  /esbuild-register/3.4.2_spgfiu64hqpilsoes5nxr46kwy_esbuild@0.17.6:
     resolution: {integrity: sha512-kG/XyTDyz6+YDuyfB9ZoSIOOmgyFCH+xPRtsCa8W85HLRV5Csp+o3jWVbOSHgSLfyLc5DmP+KFDNwty4mEjC+Q==}
     peerDependencies:
       esbuild: '>=0.12 <1'
@@ -5029,6 +5033,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+    patched: true
 
   /esbuild/0.17.6:
     resolution: {integrity: sha512-TKFRp9TxrJDdRWfSsSERKEovm6v30iHnrjlcGhLBOtReE28Yp1VSBRfO3GTaOFMoxsNerx4TjrhzSuma9ha83Q==}
@@ -5258,7 +5263,7 @@ packages:
       object.values: 1.1.6
       resolve: 1.22.2
       semver: 6.3.0
-      tsconfig-paths: 3.14.2
+      tsconfig-paths: 4.2.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -6732,13 +6737,6 @@ packages:
 
   /json-stable-stringify-without-jsonify/1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
-    dev: true
-
-  /json5/1.0.2:
-    resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.8
     dev: true
 
   /json5/2.2.3:
@@ -8824,16 +8822,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.13.0
-      tsconfig-paths: 3.14.2
-    dev: true
-
-  /tsconfig-paths/3.14.2:
-    resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==}
-    dependencies:
-      '@types/json5': 0.0.29
-      json5: 1.0.2
-      minimist: 1.2.8
-      strip-bom: 3.0.0
+      tsconfig-paths: 4.2.0
     dev: true
 
   /tsconfig-paths/4.2.0:
