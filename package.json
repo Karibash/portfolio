@@ -1,22 +1,16 @@
 {
-  "private": true,
   "name": "@karibash/website",
   "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "dev:storybook": "storybook dev -p 6006",
     "build": "next build",
     "build:storybook": "storybook build",
     "start": "next start",
-    "lint": "next lint"
-  },
-  "pnpm": {
-    "overrides": {
-      "tsconfig-paths": "4.2.0"
-    },
-    "patchedDependencies": {
-      "esbuild-register@3.4.2": "patches/esbuild-register@3.4.2.patch"
-    }
+    "lint:code": "eslint .",
+    "lint:type": "tsc --noEmit"
   },
   "dependencies": {
     "modern-normalize": "1.1.0",
@@ -26,6 +20,13 @@
   },
   "devDependencies": {
     "@babel/core": "7.21.8",
+    "@praha/eslint-config-common": "4.0.1",
+    "@praha/eslint-config-definer": "2.0.1",
+    "@praha/eslint-config-javascript": "3.0.5",
+    "@praha/eslint-config-next": "4.0.6",
+    "@praha/eslint-config-react": "4.0.6",
+    "@praha/eslint-config-style": "3.0.6",
+    "@praha/eslint-config-typescript": "3.0.6",
     "@storybook/addon-essentials": "7.0.9",
     "@storybook/addon-interactions": "7.0.9",
     "@storybook/addon-links": "7.0.9",
@@ -36,16 +37,10 @@
     "@types/node": "18.16.5",
     "@types/react": "18.2.5",
     "@types/react-dom": "18.2.4",
-    "@typescript-eslint/eslint-plugin": "5.59.2",
-    "@typescript-eslint/parser": "5.59.2",
     "@vanilla-extract/css": "1.11.0",
     "@vanilla-extract/next-plugin": "2.1.2",
     "@vanilla-extract/webpack-plugin": "2.2.0",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.1",
-    "eslint-import-resolver-typescript": "3.5.5",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-unused-imports": "2.0.0",
+    "eslint": "9.31.0",
     "storybook": "7.0.9",
     "typescript": "5.0.4",
     "webpack": "5.82.0",

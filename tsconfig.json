@@ -12,9 +12,9 @@
   },
   "include": [
     ".next/types/**/*.ts",
-    "next-env.d.ts",
+    ".storybook/**/*",
     "**/*.ts",
-    "**/*.tsx",
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"

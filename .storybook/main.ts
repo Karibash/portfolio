@@ -23,7 +23,7 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
-  webpackFinal: config => {
+  webpackFinal: (config) => {
     return merge(config, {
       plugins: [
         new VanillaExtractPlugin(),
