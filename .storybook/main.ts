@@ -1,7 +1,7 @@
-import { VanillaExtractPlugin } from '@vanilla-extract/webpack-plugin';
-import { merge } from 'webpack-merge';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import { mergeConfig } from 'vite';
 
-import type { StorybookConfig } from '@storybook/nextjs';
+import type { StorybookConfig } from '@storybook/nextjs-vite';
 
 const config: StorybookConfig = {
   staticDirs: [
@@ -12,21 +12,17 @@ const config: StorybookConfig = {
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: [
+    '@storybook/addon-docs',
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
   ],
   framework: {
-    name: '@storybook/nextjs',
+    name: '@storybook/nextjs-vite',
     options: {},
   },
-  docs: {
-    autodocs: 'tag',
-  },
-  webpackFinal: (config) => {
-    return merge(config, {
+  viteFinal: (config) => {
+    return mergeConfig(config, {
       plugins: [
-        new VanillaExtractPlugin(),
+        vanillaExtractPlugin(),
       ],
     });
   },
