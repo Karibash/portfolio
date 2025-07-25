@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import type { FC, ReactNode } from 'react';
 
 import 'modern-normalize/modern-normalize.css';
+import './layout.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
