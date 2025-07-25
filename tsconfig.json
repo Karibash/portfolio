@@ -8,15 +8,13 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2024"
   },
   "include": [
     ".next/types/**/*.ts",
     ".storybook/**/*",
     "**/*.ts",
     "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }

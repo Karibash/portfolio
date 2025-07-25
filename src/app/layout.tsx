@@ -1,18 +1,19 @@
 import { Inter } from 'next/font/google';
 
-import type { FC } from 'react';
+import type { Metadata } from 'next';
+import type { FC, ReactNode } from 'react';
 
 import 'modern-normalize/modern-normalize.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Karibash',
   description: 'Personal website of Karibash.',
 };
 
 export type RootLayoutProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const RootLayout: FC<RootLayoutProps> = ({
