@@ -1,0 +1,28 @@
+import { createGlobalTheme } from '@vanilla-extract/css';
+
+export const palette = createGlobalTheme(':root', {
+  white: 'oklch(100% 0 0)',
+  black: 'oklch(0% 0 0)',
+  zinc50: 'oklch(98.5% 0 0)',
+  zinc100: 'oklch(96.7% 0.001 286.375)',
+  zinc200: 'oklch(92% 0.004 286.32)',
+  zinc300: 'oklch(87.1% 0.006 286.286)',
+  zinc400: 'oklch(70.5% 0.015 286.067)',
+  zinc500: 'oklch(55.2% 0.016 285.938)',
+  zinc600: 'oklch(44.2% 0.017 285.786)',
+  zinc700: 'oklch(37% 0.013 285.805)',
+  zinc800: 'oklch(27.4% 0.006 286.033)',
+  zinc900: 'oklch(21% 0.006 285.885)',
+  zinc950: 'oklch(14.1% 0.005 285.823)',
+  red50: 'oklch(97.1% 0.013 17.38)',
+  red100: 'oklch(93.6% 0.032 17.717)',
+  red200: 'oklch(88.5% 0.062 18.334)',
+  red300: 'oklch(80.8% 0.114 19.571)',
+  red400: 'oklch(70.4% 0.191 22.216)',
+  red500: 'oklch(63.7% 0.237 25.331)',
+  red600: 'oklch(57.7% 0.245 27.325)',
+  red700: 'oklch(50.5% 0.213 27.518)',
+  red800: 'oklch(44.4% 0.177 26.899)',
+  red900: 'oklch(39.6% 0.141 25.723)',
+  red950: 'oklch(25.8% 0.092 26.042)',
+});

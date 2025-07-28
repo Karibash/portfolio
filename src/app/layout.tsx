@@ -1,3 +1,6 @@
+import * as styles from './layout.css';
+import { Background } from '../components/background';
+
 import type { Metadata } from 'next';
 import type { FC, ReactNode } from 'react';
 
@@ -18,8 +21,11 @@ const RootLayout: FC<RootLayoutProps> = ({
 }) => {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <body className={styles.body}>
+        <Background className={styles.background} />
+        <div className={styles.container}>
+          {children}
+        </div>
       </body>
     </html>
   );
