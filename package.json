@@ -13,6 +13,7 @@
     "lint:type": "tsc --noEmit"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "1.2.3",
     "clsx": "2.1.1",
     "modern-normalize": "3.0.1",
     "next": "15.4.4",
